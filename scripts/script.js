@@ -1,13 +1,6 @@
 var slideIndex = 0;
 showSlides();
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");

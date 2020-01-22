@@ -12,7 +12,6 @@ header {
     float: right;
     list-style: none;
     margin-top: 24px;
-    padding-right: 16px;
 }
 .nav li {
     display: inline-block;
@@ -58,11 +57,31 @@ header {
     padding-top: 16px;
     cursor: pointer;
 }
-.description-container {
+.about-us-container {
     display: flex;
 }
 .column {
     flex: 1;
+    margin: 24px;
+}
+.description-container {
+    /* background-color: #f2f2f2 !important; */
+}
+.description {
+    text-align: center;
+}
+.about-us-title {
+    padding: 16px;
+    color: #a6a6a6;
+    font-family: cursive;
+    font-size: 32px;
+}
+.about-us-content {
+    color: #404040;
+    font-family: cursive;
+    font-style: italic;  
+    font-size: 16px;
+    padding-bottom: 54px
 }
 .mySlides {
       display: none;
@@ -71,4 +90,20 @@ header {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: grey;
+    border: 1px solid #555555;
+  }
+  .button:hover {
+    border: 2px solid #555555;
+    font-style: italic;
+  }
 
