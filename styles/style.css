@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +12,13 @@ header {
     background-position: center;
 }
 .nav {
-    float: right;
     list-style: none;
-    margin-top: 24px;
+    position: fixed;
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+    line-height: 50px;
+    text-align: right;
 }
 .nav li {
     display: inline-block;
@@ -24,23 +31,16 @@ header {
     font-family: cursive;
     font-size: 16px;
 }
-.nav li a:hover {
-    border-bottom: 1px solid white;
-}
-.logo i {
-    font-size:80px;
-    color:white;
-    float: left;
+.nav li:hover {
+    border-bottom: 2px solid teal;
 }
 .row {
-    width:1200px;
     margin: auto;
 }
 .title {
     position: absolute;
-    width: 1200px;
+    margin-left: 300px;
     margin-top : 0;
-    margin-left: 0;
 }
 .title p {
     color: white;
@@ -53,28 +53,27 @@ header {
 .title .down-arrow {
     font-size:48px;
     color:white;
-    margin-left: 600px;
+    margin-left: 300px;
     padding-top: 16px;
     cursor: pointer;
 }
 .about-us-container {
+    padding: 40px 40px 100px 40px;
+    height: 500px;
     display: flex;
 }
 .column {
     flex: 1;
     margin: 24px;
 }
-.description-container {
-    /* background-color: #f2f2f2 !important; */
-}
 .description {
     text-align: center;
 }
 .about-us-title {
     padding: 16px;
-    color: #a6a6a6;
+    color: teal;
     font-family: cursive;
-    font-size: 32px;
+    font-size: 48px;
 }
 .about-us-content {
     color: #404040;
@@ -82,6 +81,7 @@ header {
     font-style: italic;  
     font-size: 16px;
     padding-bottom: 54px
+    
 }
 .mySlides {
       display: none;
@@ -99,11 +99,130 @@ header {
     margin: 4px 2px;
     cursor: pointer;
     background-color: white;
-    color: grey;
+    color: teal;
     border: 1px solid #555555;
+    text-decoration: none;
   }
   .button:hover {
     border: 2px solid #555555;
     font-style: italic;
   }
+  .flavour-section {
+    background-color: #f1f1f1;
+  }
+  .flavour-header {
+      text-align: center;
+      padding: 32px;
+      color: teal;
+      font-family: cursive;
+      font-size: 48px;
+  }
+  .flavour-container {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+  }
+  
+  .flavour-container>div {
 
+    color: white;
+    margin: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+  }
+  .flavours {
+    cursor: pointer;
+    position: relative;
+    width: 20%;    
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 50%;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .flavours:hover .image {
+    opacity: 0.7;
+  }
+  
+  .flavours:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    border: 1px solid grey;
+    padding: 8px 16px;
+  }
+  .contact-container, footer {
+      text-align: center;
+  }
+  .contact-section {
+      display: inline-block;
+      padding: 48px;
+  }
+  footer {
+      background-color: black;
+  }
+  .up-arrow-section {
+      display: inline-block;
+      padding: 24px;
+      cursor: pointer;
+  }
+  .up-arrow {
+      font-size:36px !important;
+      color: white;
+  }
+  .subtext {
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    padding-bottom: 16px;
+  }
+.visti-text {
+    padding-top: 16px;
+}
+  .card {
+    transition: 0.3s;
+    display: inline-flex;
+    padding: 16px;
+    border: 2px solid teal;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.2);
+  }
+  
+  .contactNumber, .address {
+      display: flex;
+    padding: 2px 16px;
+    color: teal;
+  }
+  .phone-icon {
+    transform: scaleX(-1);
+    padding-right: 8px;
+  }
+  .contactNumber p, .address p {
+    padding-left: 8px;
+  }

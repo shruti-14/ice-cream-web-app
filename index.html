@@ -1,63 +1,142 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Yummy scoops!</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  </head>
-  <body>
-   <header>
+
+<head>
+  <meta charset="utf-8">
+  <title>Yummy scoops!</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+  <header>
     <div class="row">
-        <ul class="nav">
-            <li><a>HOME</a></li>
-            <li><a>ABOUT US</a></li>
-            <li><a>FLAVOURS</a></li>
-            <li><a>CONTACT</a></li>
-        </ul>
+      <ul class="nav">
+        <li>
+          <a href="#homeSection">HOME</a>
+        </li>
+        <li>
+          <a href="#aboutUsSection">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#flavourSection">FLAVOURS</a>
+        </li>
+        <li>
+          <a href="#contactSection">CONTACT</a>
+        </li>
+      </ul>
     </div>
-    <div class="title">
-        <p>Yummy scoops ;)</p>
-        <i class="fa fa-angle-double-down down-arrow" style=""></i>
+    <div class="title" id="homeSection">
+      <p>Yummy scoops ;)</p>
+      <a href="#aboutUsSection">
+        <i class="fa fa-angle-double-down down-arrow"></i>
+      </a>
     </div>
-   </header>
-   <div class="about-us-container">
-        <div class="column">
-            <div class="slideshow-container">
-                    <div class="mySlides fade">
-                            <img src="./images/carousel-1.jpg" style="width:100%">
-                          </div>
-                          
-                          <div class="mySlides fade">
-                            <img src="./images/carousel-2.jpg" style="width:100%">
-                          </div>
-                          
-                          <div class="mySlides fade">
-                            <img src="./images/carousel-3.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides fade">
-                                <img src="./images/carousel-4.jpg" style="width:100%">
-                              </div>
-                              <div class="mySlides fade">
-                                    <img src="./images/carousel-5.jpg" style="width:100%">
-                                  </div>
-            </div>
-
-                        
+  </header>
+  <div class="about-us-container" id="aboutUsSection">
+    <div class="column">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./images/carousel-1.jpg" style="width:100%">
         </div>
-        <div class="column description-container">
-            <div class="description">
-                <p class="about-us-title">About us</p>
-                <p class="about-us-content">You can't buy happiness, but you can buy ice-cream, <br>  <br> that is pretty much the same thing!
-                    <br> <br>We serve happiness with pretty smiles ;) 
-                </p>
-                <button class="button"><p>Check out the flavours</p></button>
 
-            </div>
-                
-                
-        </div>      
+        <div class="mySlides fade">
+          <img src="./images/carousel-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/carousel-3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./images/carousel-4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./images/carousel-5.jpg" style="width:100%">
+        </div>
       </div>
-  </body>
-  <script src='./scripts/script.js'></script>
-</html> 
+
+
+    </div>
+    <div class="column description-container">
+      <div class="description">
+        <p class="about-us-title">About us</p>
+        <p class="about-us-content">You can't buy happiness, but you can buy ice-cream,
+          <br>
+          <br> that is pretty much the same thing !
+          <br>
+          <br>We serve happiness with pretty smiles ;)
+        </p>
+        <a class="button" href="#flavourSection">
+          <p>Check out the flavours</p>
+        </a>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="flavour-section">
+    <p class="flavour-header">Flavours</p>
+    <div class="flavour-container" id="flavourSection">
+      <div class="flavours">
+        <img src="./images/flavours/chocolate_flavour.jpg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Delicious chocolate!</div>
+        </div>
+      </div>
+      <div class="flavours">
+        <img src="./images/flavours/strawberry_flavour.jpg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Sweet strawberry!</div>
+        </div>
+      </div>
+      <div class="flavours">
+        <img src="./images/flavours/vanilla_flavours.jpg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Simply vanilla!</div>
+        </div>
+      </div>
+      <div class="flavours">
+        <img src="./images/flavours/oreo_flavour.jpg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Funky oreo!</div>
+        </div>
+      </div>
+      <div class="flavours">
+        <img src="./images/flavours/mango_flavour.jpg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Yummy Mango!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-container" id="contactSection">
+    <div class="contact-section">
+      <p class="subtext">Call for orders</p>
+      <div class="card phone-section">
+        <div class="contactNumber">
+          <i class="fa fa-phone phone-icon"></i>
+          <p>91+8800997652</p>
+        </div>
+      </div>
+      <p class="subtext visti-text">or visit us...</p>
+      <div class="card">
+        <div class="address">
+          <i class="fa fa-map-signs"></i>
+          <p>Daffodils, Amanora Park town, Pune</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="up-arrow-section">
+      <a href="#homeSection">
+        <i class="fa fa-angle-double-up up-arrow"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+<script src='./scripts/script.js'></script>
+
+</html>
