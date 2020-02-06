@@ -80,11 +80,10 @@ header {
     font-family: cursive;
     font-style: italic;  
     font-size: 16px;
-    padding-bottom: 54px
-    
+    padding-bottom: 54px;
 }
 .mySlides {
-      display: none;
+    display: none;
 }  
 .fade {
     animation-name: fade;
@@ -111,11 +110,11 @@ header {
     background-color: #f1f1f1;
   }
   .flavour-header {
-      text-align: center;
-      padding: 32px;
-      color: teal;
-      font-family: cursive;
-      font-size: 48px;
+    text-align: center;
+    padding: 32px;
+    color: teal;
+    font-family: cursive;
+    font-size: 48px;
   }
   .flavour-container {
     display: flex;
@@ -124,7 +123,6 @@ header {
   }
   
   .flavour-container>div {
-
     color: white;
     margin: 50px;
     text-align: center;
@@ -175,23 +173,23 @@ header {
     padding: 8px 16px;
   }
   .contact-container, footer {
-      text-align: center;
+    text-align: center;
   }
   .contact-section {
-      display: inline-block;
-      padding: 48px;
+    display: inline-block;
+    padding: 48px;
   }
   footer {
-      background-color: black;
+    background-color: black;
   }
   .up-arrow-section {
-      display: inline-block;
-      padding: 24px;
-      cursor: pointer;
+    display: inline-block;
+    padding: 24px;
+    cursor: pointer;
   }
   .up-arrow {
-      font-size:36px !important;
-      color: white;
+    font-size:36px !important;
+    color: white;
   }
   .subtext {
     font-size: 20px;
@@ -215,7 +213,7 @@ header {
   }
   
   .contactNumber, .address {
-      display: flex;
+    display: flex;
     padding: 2px 16px;
     color: teal;
   }
